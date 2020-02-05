@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible">
+  <title>Hawkins Public Library</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <!-- NAV STARTS HERE -->
+    <div class="container--nav">
+
+      <ul class="nav__ul nav__ul--site">
+        <li class="nav__li nav__li--site"><a href="index.html" class="nav__a nav__a--site">HPL</a></li>
+      </ul>
+
+      <nav class="nav nav--site">
+        <ul class="nav__ul nav__ul--site">
+          <li class="nav__li nav__li--site"><a href="library.html" class="nav__a nav__a--site">Library</a></li>
+          <li class="nav__li nav__li--site"><a href="events.html" class="nav__a nav__a--site">Events</a></li>
+          <li class="nav__li nav__li--site"><a href="return.html" class="nav__a nav__a--site">Return Books</a></li>
+          <li class="nav__li nav__li--site"><a href="join.html" class="nav__a nav__a--site">Join</a></li>
+          <li class="nav__li nav__li--site"><a href="admin.html" class="nav__a nav__a--site">Admin</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <!-- NAV ENDS HERE -->
+
+    <div class="container container--content">
+      <h1>Library</h1>
+      <div>
+        <table class="table table--books">
+          <thead class="thead">
+            <tr class="tr tr--books">
+              <th class="th th--books">add to checkout</th>
+              <th class="th th--books">bookID</th>
+              <th class="th th--books">title</th>
+              <th class="th th--books">author</th>
+              <th class="th th--books">publisher</th>
+              <th class="th th--books">genre</th>
+              <th class="th th--books">orderNumber</th>
+            </tr>
+          </thead>
+          <tbody class="tbody tbody--books">
+            <!-- data goes here this is placeholder, this will be replaced -->
+            <tr class="tr tr--books">
+              <td class="td td--books"><input type="checkbox"></td>
+              <td class="td td--books">1</td>
+              <td class="td td--books">the hobbit</td>
+              <td class="td td--books">jrr tolkien</td>
+              <td class="td td--books">penguin</td>
+              <td class="td td--books">fantasy</td>
+              <td class="td td--books">NULL</td>
+            </tr>
+            <tr class="tr tr--books">
+              <td class="td td--books"><input type="checkbox"></td>
+              <td class="td td--books">2</td>
+              <td class="td td--books">harry pooter</td>
+              <td class="td td--books">jk rowling</td>
+              <td class="td td--books">paramount</td>
+              <td class="td td--books">fantasy</td>
+              <td class="td td--books">NULL</td>
+            </tr>
+            <tr class="tr tr--books">
+              <td class="td td--books">
+                <input type="checkbox">
+              </td>
+              <td class="td td--books">3</td>
+              <td class="td td--books">hunger games</td>
+              <td class="td td--books">suzanne collins</td>
+              <td class="td td--books">scholastic</td>
+              <td class="td td--books">novel</td>
+              <td class="td td--books">23</td>
+            </tr>
+            <tr class="tr tr--books">
+              <td class="td td--books">
+                <input type="checkbox">
+              </td>
+              <td class="td td--books">4</td>
+              <td class="td td--books">pride and prejudice</td>
+              <td class="td td--books">jane austen</td>
+              <td class="td td--books">a publisher</td>
+              <td class="td td--books">historical?</td>
+              <td class="td td--books">3</td>
+            </tr>
+            <tr class="tr tr--books">
+              <td class="td td--books">
+                <input type="checkbox">
+              </td>
+              <td class="td td--books">5</td>
+              <td class="td td--books">chronicles of narnia</td>
+              <td class="td td--books">cs lewis</td>
+              <td class="td td--books">hello world</td>
+              <td class="td td--books">fantasy</td>
+              <td class="td td--books">NULL</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+          <fieldset>
+            <legend>Checkout Book</legend>
+            <p>
+              <label>Library ID:
+                <input type="number" name="id-input">
+              </label>
+            </p>
+            <input type="submit" value="Checkout">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
