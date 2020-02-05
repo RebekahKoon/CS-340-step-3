@@ -123,3 +123,51 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #c62e1d;
 }
+
+
+/* GLOBAL */
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #262626;
+}
+
+a:hover {
+  transition: 0.2s;
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.container--nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+
+/* NAV */
+.nav__a--site {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__li--site {
+  display: inline-block;
+  font-size: 1.1em;;
+  padding: 0px 4px;
+  list-style-type: none;
+}
+
+.nav__ul {
+  list-style-type: none;
+  padding: 0;
+}
