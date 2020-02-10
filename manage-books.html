@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible">
+  <link rel="stylesheet" href="style.css" type="text/css">
   <title>Hawkins Public Library - Manage Books</title>
-  <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
     <!-- NAV STARTS HERE -->
@@ -29,7 +30,7 @@
     </div>
     <!-- NAV ENDS HERE -->
 
-    <div class="container container--content">
+    <div class="container--content">
       <h1>Manage Books</h1>
       <div>
         <table class="table table--books">
@@ -112,31 +113,31 @@
       </div>
 
       <div>
-        <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
-          <fieldset>
-            <legend>Add Book</legend>
-            <p>
-              <label>Title:
-                <input type="text" name="title">
-              </label>
-            </p>
-            <p>
-              <label>Author:
-                <input type="text" name="author">
-              </label>
-            </p>
-            <p>
-              <label>Publisher:
-                <input type="text" name="publisher">
-              </label>
-            </p>
-            <p>
-              <label>Genre:
-                <input type="text" name="genre">
-              </label>
-            </p>
+        <form class="form--add-book" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+          <!-- <fieldset> -->
+            <h2>Add Book</h2>
+            <div class="form-field--add-book">
+              <label>Title:</label>
+              <input class="input--add-book" type="text" name="title">
+            </div>
+            
+            <div class="form-field--add-book">
+              <label>Author:</label>
+              <input class="input--add-book" type="text" name="title">
+            </div>
+
+            <div class="form-field--add-book">
+              <label>Publisher:</label>
+              <input class="input--add-book" type="text" name="title">
+            </div>
+
+            <div class="form-field--add-book">
+              <label>Genre:</label>
+              <input class="input--add-book" type="text" name="title">
+            </div>
+
             <input type="submit" value="Add Book">
-          </fieldset>
+          <!-- </fieldset> -->
         </form>
       </div>
     </div>

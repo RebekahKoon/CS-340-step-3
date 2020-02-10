@@ -172,3 +172,29 @@ a:hover {
   list-style-type: none;
   padding: 0;
 }
+
+
+/* Forms */
+.form--add-book {
+  background-color: #fff;
+  padding: 48px;
+  box-shadow: 1px 1px 40px 0 rgba(0,0,0,.15);
+  border-radius: 3px;
+}
+
+.form-field--add-book {
+  max-width: 1000px;
+  width: 48%;
+}
+
+.input--add-book {
+  font-size: 1em;
+  background-color: #F9F5F1;
+  border: none;
+  padding: .8em;
+  width: 100%;
+  max-width: 500px;
+  margin-right: 1em;
+  margin: 0 1em 1em 0;
+  box-sizing: border-box;
+}
