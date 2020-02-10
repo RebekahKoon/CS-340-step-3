@@ -1,83 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible">
   <link rel="stylesheet" href="style.css" type="text/css">
-  <title>Register for Upcoming Events</title>
+  <title>Hawkins Public Library - Register for Events</title>
 </head>
 
 <body>
-  <!-- NAV STARTS HERE -->
-  <div class="container--nav">
+  <div class="container">
+    <!-- NAV STARTS HERE -->
+    <div class="container--nav">
 
-    <ul class="nav__ul nav__ul--site">
-      <li class="nav__li nav__li--site"><a href="index.html" class="nav__a nav__a--site">HPL</a></li>
-    </ul>
-
-    <nav class="nav nav--site">
       <ul class="nav__ul nav__ul--site">
-        <li class="nav__li nav__li--site"><a href="library.html" class="nav__a nav__a--site">Library</a></li>
-        <li class="nav__li nav__li--site"><a href="events.html" class="nav__a nav__a--site">Events</a></li>
-        <li class="nav__li nav__li--site"><a href="return.html" class="nav__a nav__a--site">Return Books</a></li>
-        <li class="nav__li nav__li--site"><a href="join.html" class="nav__a nav__a--site">Join</a></li>
-        <li class="nav__li nav__li--site"><a href="admin.html" class="nav__a nav__a--site">Admin</a></li>
+        <li class="nav__li nav__li--site"><a href="index.html" class="nav__a nav__a--site">HPL</a></li>
       </ul>
-    </nav>
 
+      <nav class="nav nav--site">
+        <ul class="nav__ul nav__ul--site">
+          <li class="nav__li nav__li--site"><a href="library.html" class="nav__a nav__a--site">Library</a></li>
+          <li class="nav__li nav__li--site"><a href="events.html" class="nav__a nav__a--site">Events</a></li>
+          <li class="nav__li nav__li--site"><a href="return.html" class="nav__a nav__a--site">Return Books</a></li>
+          <li class="nav__li nav__li--site"><a href="join.html" class="nav__a nav__a--site">Join</a></li>
+          <li class="nav__li nav__li--site"><a href="admin.html" class="nav__a nav__a--site">Admin</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <!-- NAV ENDS HERE -->
+
+    <div class="container--content">
+      <h1>Upcoming Events</h1>
+
+      <table>
+        <caption>Events</caption>
+        <thead>
+          <tr>
+            <th>Event ID</th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Guest</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>123</td>
+            <td>Author Meet and Greet</td>
+            <td>2/19/20</td>
+            <td>Author name</td>
+          </tr>
+          <tr>
+            <td>234</td>
+            <td>Children's Storytime</td>
+            <td>2/26/20</td>
+            <td>Librarian</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Form for user to register for an event -->
+      <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+        <fieldset>
+          <legend>Register for an Event</legend>
+          <p>
+            <label>Library ID:
+              <input type="number" name="id-input">
+            </label>
+          </p>
+          <p>
+            <select>
+              <option value="bath" name="bath">Author Meet and Greet</option>
+              <option value="grooming" name="style">Children's Storytime</option>
+            </select>
+          </p>
+          <input type="submit" value="submit-registration">
+        </fieldset>
+      </form>
+    </div>
+    
   </div>
-  <!-- NAV ENDS HERE -->
-
-  <h1>Upcoming Events</h1>
-
-  <body>
-    <table>
-      <caption>Events</caption>
-      <thead>
-        <tr>
-          <th>Event ID</th>
-          <th>Name</th>
-          <th>Date</th>
-          <th>Guest</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>123</td>
-          <td>Author Meet and Greet</td>
-          <td>2/19/20</td>
-          <td>Author name</td>
-        </tr>
-        <tr>
-          <td>234</td>
-          <td>Children's Storytime</td>
-          <td>2/26/20</td>
-          <td>Librarian</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!-- Form for user to register for an event -->
-    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
-      <fieldset>
-        <legend>Register for an Event</legend>
-        <p>
-          <label>Library ID:
-            <input type="number" name="id-input">
-          </label>
-        </p>
-        <p>
-          <select>
-            <option value="bath" name="bath">Author Meet and Greet</option>
-            <option value="grooming" name="style">Children's Storytime</option>
-          </select>
-        </p>
-        <input type="submit" value="submit-registration">
-      </fieldset>
-    </form>
-
-  </body>
+</body>
 
 </html>

@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible">
   <link rel="stylesheet" href="style.css" type="text/css">
-  <title>View Event Registration List</title>
+  <title>Hawkins Public Library - View Event Registration List</title>
 </head>
 
 <body>
-  <!-- NAV STARTS HERE -->
-  <div class="container--nav">
+  <div class="container">
+    <!-- NAV STARTS HERE -->
+    <div class="container--nav">
 
-    <ul class="nav__ul nav__ul--site">
-      <li class="nav__li nav__li--site"><a href="index.html" class="nav__a nav__a--site">HPL</a></li>
-    </ul>
-
-    <nav class="nav nav--site">
       <ul class="nav__ul nav__ul--site">
-        <li class="nav__li nav__li--site"><a href="library.html" class="nav__a nav__a--site">Library</a></li>
-        <li class="nav__li nav__li--site"><a href="events.html" class="nav__a nav__a--site">Events</a></li>
-        <li class="nav__li nav__li--site"><a href="return.html" class="nav__a nav__a--site">Return Books</a></li>
-        <li class="nav__li nav__li--site"><a href="join.html" class="nav__a nav__a--site">Join</a></li>
-        <li class="nav__li nav__li--site"><a href="admin.html" class="nav__a nav__a--site">Admin</a></li>
+        <li class="nav__li nav__li--site"><a href="index.html" class="nav__a nav__a--site">HPL</a></li>
       </ul>
-    </nav>
 
+      <nav class="nav nav--site">
+        <ul class="nav__ul nav__ul--site">
+          <li class="nav__li nav__li--site"><a href="library.html" class="nav__a nav__a--site">Library</a></li>
+          <li class="nav__li nav__li--site"><a href="events.html" class="nav__a nav__a--site">Events</a></li>
+          <li class="nav__li nav__li--site"><a href="return.html" class="nav__a nav__a--site">Return Books</a></li>
+          <li class="nav__li nav__li--site"><a href="join.html" class="nav__a nav__a--site">Join</a></li>
+          <li class="nav__li nav__li--site"><a href="admin.html" class="nav__a nav__a--site">Admin</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <!-- NAV ENDS HERE -->
+
+    <div class="container--content">
+      <h1>Event Registrations</h1>
+
+
+      <table class="table table--registration">
+        <caption>Events</caption>
+        <thead class="thead thead--registration">
+          <tr class="tr tr--registration">
+            <th class="th th--registration">Registration ID</th>
+            <th class="th th--registration">Customer ID</th>
+            <th class="th th--registration">Event ID</th>
+          </tr>
+        </thead>
+        <tbody class="tbody tbody--registration">
+          <tr class="tr tr--registration">
+            <td class="td td--registration">1</td>
+            <td class="td td--registration">123</td>
+            <td class="td td--registration">111</td>
+          </tr>
+          <tr class="tr tr--registration">
+            <td class="td td--registration">2</td>
+            <td class="td td--registration">234</td>
+            <td class="td td--registration">222</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
   </div>
-  <!-- NAV ENDS HERE -->
-  <h1>Event Registrations</h1>
-
-  <body>
-    <table class="table table--registration">
-      <caption>Events</caption>
-      <thead class="thead thead--registration">
-        <tr class="tr tr--registration">
-          <th class="th th--registration">Registration ID</th>
-          <th class="th th--registration">Customer ID</th>
-          <th class="th th--registration">Event ID</th>
-        </tr>
-      </thead>
-      <tbody class="tbody tbody--registration">
-        <tr class="tr tr--registration">
-          <td class="td td--registration">1</td>
-          <td class="td td--registration">123</td>
-          <td class="td td--registration">111</td>
-        </tr>
-        <tr class="tr tr--registration">
-          <td class="td td--registration">2</td>
-          <td class="td td--registration">234</td>
-          <td class="td td--registration">222</td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
-
+</body>
 </html>
