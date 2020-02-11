@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="library.html">Library</a>
@@ -35,14 +35,14 @@
           <a class="nav-link" href="join.html">Join</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Admin<span class="sr-only">(current)</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="manage-books.html">Manage books</a>
             <a class="dropdown-item" href="add-events.html">Manage events</a>
             <a class="dropdown-item" href="checkout-orders.html">View checkout orders</a>
-            <a class="dropdown-item" href="view-event-registration.html">View events</a>
+            <a class="dropdown-item active" href="view-event-registration.html">View events</a>
           </div>
         </li>
       </ul>
@@ -52,34 +52,43 @@
 
   <div class="container">
 
-    <div class="container--content">
-      <h1>Event Registrations</h1>
+    <h1>Event Registrations</h1>
+    <table class="table table-striped">
+      <thead class="thead thead--registration">
+        <tr class="tr tr--registration">
+          <th scope="col" class="th th--registration">Registration ID</th>
+          <th scope="col" class="th th--registration">Customer ID</th>
+          <th scope="col" class="th th--registration">Event ID</th>
+        </tr>
+      </thead>
+      <tbody class="tbody tbody--registration">
+        <tr class="tr tr--registration">
+          <th scope="row" class="td td--registration">1</th>
+          <td class="td td--registration">123</td>
+          <td class="td td--registration">111</td>
+        </tr>
+        <tr class="tr tr--registration">
+          <th scope="row" class="td td--registration">2</th>
+          <td class="td td--registration">234</td>
+          <td class="td td--registration">222</td>
+        </tr>
+        <tr class="tr tr--registration">
+          <th scope="row" class="td td--registration">23</th>
+          <td class="td td--registration">836</td>
+          <td class="td td--registration">333</td>
+        </tr>
+        <tr class="tr tr--registration">
+          <th scope="row" class="td td--registration">87</th>
+          <td class="td td--registration">974</td>
+          <td class="td td--registration">235</td>
+        </tr>
+      </tbody>
+    </table>
 
-
-      <table class="table table--registration">
-        <caption>Events</caption>
-        <thead class="thead thead--registration">
-          <tr class="tr tr--registration">
-            <th class="th th--registration">Registration ID</th>
-            <th class="th th--registration">Customer ID</th>
-            <th class="th th--registration">Event ID</th>
-          </tr>
-        </thead>
-        <tbody class="tbody tbody--registration">
-          <tr class="tr tr--registration">
-            <td class="td td--registration">1</td>
-            <td class="td td--registration">123</td>
-            <td class="td td--registration">111</td>
-          </tr>
-          <tr class="tr tr--registration">
-            <td class="td td--registration">2</td>
-            <td class="td td--registration">234</td>
-            <td class="td td--registration">222</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    
   </div>
+  <!-- bootstrap js dependencies -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

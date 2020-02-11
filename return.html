@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="library.html">Library</a>
@@ -29,7 +29,7 @@
           <a class="nav-link" href="events.html">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="return.html">Return Books</a>
+          <a class="nav-link active" href="return.html">Return Books</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="join.html">Join</a>
@@ -51,86 +51,87 @@
   <!-- NAV ENDS HERE -->
 
   <div class="container">
-      <h1>Return A Book</h1>
-      <div>
-        <table class="table table--books">
-          <thead class="thead">
-            <tr class="tr tr--books">
-              <th class="th th--books">add to return</th>
-              <th class="th th--books">bookID</th>
-              <th class="th th--books">title</th>
-              <th class="th th--books">author</th>
-              <th class="th th--books">publisher</th>
-              <th class="th th--books">genre</th>
-              <th class="th th--books">orderNumber</th>
-            </tr>
-          </thead>
-          <tbody class="tbody tbody--books">
-            <!-- data goes here this is placeholder, this will be replaced -->
-            <tr class="tr tr--books">
-              <td class="td td--books"><input type="checkbox"></td>
-              <td class="td td--books">1</td>
-              <td class="td td--books">the hobbit</td>
-              <td class="td td--books">jrr tolkien</td>
-              <td class="td td--books">penguin</td>
-              <td class="td td--books">fantasy</td>
-              <td class="td td--books">2</td>
-            </tr>
-            <tr class="tr tr--books">
-              <td class="td td--books"><input type="checkbox"></td>
-              <td class="td td--books">2</td>
-              <td class="td td--books">harry pooter</td>
-              <td class="td td--books">jk rowling</td>
-              <td class="td td--books">paramount</td>
-              <td class="td td--books">fantasy</td>
-              <td class="td td--books">32</td>
-            </tr>
-            <tr class="tr tr--books">
-              <td class="td td--books">
-                <input type="checkbox">
-              </td>
-              <td class="td td--books">3</td>
-              <td class="td td--books">hunger games</td>
-              <td class="td td--books">suzanne collins</td>
-              <td class="td td--books">scholastic</td>
-              <td class="td td--books">novel</td>
-              <td class="td td--books">23</td>
-            </tr>
-            <tr class="tr tr--books">
-              <td class="td td--books">
-                <input type="checkbox">
-              </td>
-              <td class="td td--books">4</td>
-              <td class="td td--books">pride and prejudice</td>
-              <td class="td td--books">jane austen</td>
-              <td class="td td--books">a publisher</td>
-              <td class="td td--books">historical?</td>
-              <td class="td td--books">3</td>
-            </tr>
-            <tr class="tr tr--books">
-              <td class="td td--books">
-                <input type="checkbox">
-              </td>
-              <td class="td td--books">5</td>
-              <td class="td td--books">chronicles of narnia</td>
-              <td class="td td--books">cs lewis</td>
-              <td class="td td--books">hello world</td>
-              <td class="td td--books">fantasy</td>
-              <td class="td td--books">98</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <h1>Return A Book</h1>
+    <table class="table table-striped">
+      <thead class="thead">
+        <tr class="tr tr--books">
+          <th scope="col" class="th th--books">add to return</th>
+          <th scope="col" class="th th--books">bookID</th>
+          <th scope="col" class="th th--books">title</th>
+          <th scope="col" class="th th--books">author</th>
+          <th scope="col" class="th th--books">publisher</th>
+          <th scope="col" class="th th--books">genre</th>
+          <th scope="col" class="th th--books">orderNumber</th>
+        </tr>
+      </thead>
+      <tbody class="tbody tbody--books">
+        <!-- data goes here this is placeholder, this will be replaced -->
+        <tr class="tr tr--books">
+          <td class="td td--books"><input type="checkbox"></td>
+          <th scope="row" class="td td--books">1</th>
+          <td class="td td--books">the hobbit</td>
+          <td class="td td--books">jrr tolkien</td>
+          <td class="td td--books">penguin</td>
+          <td class="td td--books">fantasy</td>
+          <td class="td td--books">2</td>
+        </tr>
+        <tr class="tr tr--books">
+          <td class="td td--books"><input type="checkbox"></td>
+          <th scope="row" class="td td--books">2</th>
+          <td class="td td--books">harry pooter</td>
+          <td class="td td--books">jk rowling</td>
+          <td class="td td--books">paramount</td>
+          <td class="td td--books">fantasy</td>
+          <td class="td td--books">32</td>
+        </tr>
+        <tr class="tr tr--books">
+          <td class="td td--books">
+            <input type="checkbox">
+          </td>
+          <th scope="row" class="td td--books">3</th>
+          <td class="td td--books">hunger games</td>
+          <td class="td td--books">suzanne collins</td>
+          <td class="td td--books">scholastic</td>
+          <td class="td td--books">novel</td>
+          <td class="td td--books">23</td>
+        </tr>
+        <tr class="tr tr--books">
+          <td class="td td--books">
+            <input type="checkbox">
+          </td>
+          <th scope="row" class="td td--books">4</th>
+          <td class="td td--books">pride and prejudice</td>
+          <td class="td td--books">jane austen</td>
+          <td class="td td--books">a publisher</td>
+          <td class="td td--books">historical?</td>
+          <td class="td td--books">3</td>
+        </tr>
+        <tr class="tr tr--books">
+          <td class="td td--books">
+            <input type="checkbox">
+          </td>
+          <th scope="row" class="td td--books">5</th>
+          <td class="td td--books">chronicles of narnia</td>
+          <td class="td td--books">cs lewis</td>
+          <td class="td td--books">hello world</td>
+          <td class="td td--books">fantasy</td>
+          <td class="td td--books">98</td>
+        </tr>
+      </tbody>
+    </table>
 
-      <div>
-        <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
-          <fieldset>
-            <legend>Return Book</legend>
-            <input type="submit" value="Return Book">
-          </fieldset>
-        </form>
-      </div>
+    <div>
+      <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+        <fieldset>
+          <input type="submit" class="btn btn-primary" value="Return Book">
+        </fieldset>
+      </form>
     </div>
+    
   </div>
+  <!-- bootstrap js dependencies -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
