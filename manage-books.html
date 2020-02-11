@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="library.html">Library</a>
@@ -35,11 +35,11 @@
           <a class="nav-link" href="join.html">Join</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Admin<span class="sr-only">(current)</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="manage-books.html">Manage books</a>
+            <a class="dropdown-item dropdown-item active" href="manage-books.html">Manage books</a>
             <a class="dropdown-item" href="add-events.html">Manage events</a>
             <a class="dropdown-item" href="checkout-orders.html">View checkout orders</a>
             <a class="dropdown-item" href="view-event-registration.html">View events</a>
@@ -53,22 +53,22 @@
   <div class="container">
       <h1>Manage Books</h1>
       <div>
-        <table class="table table--books">
-          <thead class="thead">
+        <table class="table table-striped">
+          <thead class="thead thead--books">
             <tr class="tr tr--books">
-              <th class="th th--books">bookID</th>
-              <th class="th th--books">title</th>
-              <th class="th th--books">author</th>
-              <th class="th th--books">publisher</th>
-              <th class="th th--books">genre</th>
-              <th class="th th--books">orderNumber</th>
-              <th class="th th--books">update/delete</th>
+              <th class="th th--books" scope="col">bookID</th>
+              <th class="th th--books" scope="col">title</th>
+              <th class="th th--books" scope="col">author</th>
+              <th class="th th--books" scope="col">publisher</th>
+              <th class="th th--books" scope="col">genre</th>
+              <th class="th th--books" scope="col">orderNumber</th>
+              <th class="th th--books" scope="col">update/delete</th>
             </tr>
           </thead>
           <tbody class="tbody tbody--books">
             <!-- data goes here this is placeholder, this will be replaced -->
             <tr class="tr tr--books">
-              <td class="td td--books">1</td>
+              <th class="td td--books" scope="row">1</td>
               <td class="td td--books">the hobbit</td>
               <td class="td td--books">jrr tolkien</td>
               <td class="td td--books">penguin</td>
@@ -81,7 +81,7 @@
               
             </tr>
             <tr class="tr tr--books">
-              <td class="td td--books">2</td>
+              <th class="td td--books" scope="row">2</td>
               <td class="td td--books">harry pooter</td>
               <td class="td td--books">jk rowling</td>
               <td class="td td--books">paramount</td>
@@ -93,7 +93,7 @@
               </td>
             </tr>
             <tr class="tr tr--books">
-              <td class="td td--books">3</td>
+              <th class="td td--books" scope="row">3</td>
               <td class="td td--books">hunger games</td>
               <td class="td td--books">suzanne collins</td>
               <td class="td td--books">scholastic</td>
@@ -105,7 +105,7 @@
               </td>
             </tr>
             <tr class="tr tr--books">
-              <td class="td td--books">4</td>
+              <th class="td td--books" scope="row">4</td>
               <td class="td td--books">pride and prejudice</td>
               <td class="td td--books">jane austen</td>
               <td class="td td--books">a publisher</td>
@@ -117,7 +117,7 @@
               </td>
             </tr>
             <tr class="tr tr--books">
-              <td class="td td--books">5</td>
+              <th class="td td--books" scope="row">5</td>
               <td class="td td--books">chronicles of narnia</td>
               <td class="td td--books">cs lewis</td>
               <td class="td td--books">hello world</td>
@@ -134,33 +134,38 @@
 
       <div>
         <form class="form--add-book" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
-          <!-- <fieldset> -->
-            <h2>Add Book</h2>
-            <div class="form-field--add-book">
-              <label>Title:</label>
-              <input class="input--add-book" type="text" name="title">
+          <fieldset>
+            <legend>Add Book</legend>
+            <div class="form-group">
+              <label>Title</label>
+              <input type="text" class="form-control" name="title">
             </div>
             
-            <div class="form-field--add-book">
-              <label>Author:</label>
-              <input class="input--add-book" type="text" name="title">
+            <div class="form-group">
+              <label>Author</label>
+              <input type="text" class="form-control" name="title">
             </div>
 
-            <div class="form-field--add-book">
-              <label>Publisher:</label>
-              <input class="input--add-book" type="text" name="title">
+            <div class="form-group">
+              <label>Publisher</label>
+              <input type="text" class="form-control" name="title">
             </div>
 
-            <div class="form-field--add-book">
-              <label>Genre:</label>
-              <input class="input--add-book" type="text" name="title">
+            <div class="form-group">
+              <label>Genre</label>
+              <input type="text" class="form-control" name="title">
             </div>
 
-            <input type="submit" value="Add Book">
-          <!-- </fieldset> -->
+            <input type="submit" class="btn btn-primary" value="Add Book">
+          </fieldset>
         </form>
       </div>
     </div>
   </div>
+
+  <!-- bootstrap js dependencies -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
