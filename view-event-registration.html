@@ -5,30 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible">
   <link rel="stylesheet" href="style.css" type="text/css">
-  <title>Hawkins Public Library - View Event Registration List</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Hawkins Public Library</title>
 </head>
 
 <body>
-  <div class="container">
-    <!-- NAV STARTS HERE -->
-    <div class="container--nav">
-
-      <ul class="nav__ul nav__ul--site">
-        <li class="nav__li nav__li--site"><a href="index.html" class="nav__a nav__a--site">HPL</a></li>
+  <!-- NAV STARTS HERE -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="#">HPL</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="library.html">Library</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="return.html">Return Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="join.html">Join</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Admin<span class="sr-only">(current)</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="manage-books.html">Manage books</a>
+            <a class="dropdown-item" href="add-events.html">Manage events</a>
+            <a class="dropdown-item" href="checkout-orders.html">View checkout orders</a>
+            <a class="dropdown-item" href="view-event-registration.html">View events</a>
+          </div>
+        </li>
       </ul>
-
-      <nav class="nav nav--site">
-        <ul class="nav__ul nav__ul--site">
-          <li class="nav__li nav__li--site"><a href="library.html" class="nav__a nav__a--site">Library</a></li>
-          <li class="nav__li nav__li--site"><a href="events.html" class="nav__a nav__a--site">Events</a></li>
-          <li class="nav__li nav__li--site"><a href="return.html" class="nav__a nav__a--site">Return Books</a></li>
-          <li class="nav__li nav__li--site"><a href="join.html" class="nav__a nav__a--site">Join</a></li>
-          <li class="nav__li nav__li--site"><a href="admin.html" class="nav__a nav__a--site">Admin</a></li>
-        </ul>
-      </nav>
-
     </div>
-    <!-- NAV ENDS HERE -->
+  </nav>
+  <!-- NAV ENDS HERE -->
+
+  <div class="container">
 
     <div class="container--content">
       <h1>Event Registrations</h1>

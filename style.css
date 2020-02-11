@@ -1,13 +1,13 @@
 :root {
   --accent-color: #E34F00;
 }
-
+/* 
 h1 {
   text-align: center;
-}
+} */
 
 /* Style for tables */
-.table {
+/* .table {
   border: 1px solid black;
   margin: auto;
   margin-bottom: 20px;
@@ -37,10 +37,10 @@ form {
   width: 50%;
   margin: auto;
   margin-bottom: 20px;
-}
+} */
 
 /* Input type for each form item */
-input[type=text], input[type=email], input[type=date], input[type=number], textarea {
+/* input[type=text], input[type=email], input[type=date], input[type=number], textarea {
   width: 100%;
   float: right;
   font-size: 1em;
@@ -55,21 +55,21 @@ input[type=date] {
   font-size: 1em;
   font-family: Roboto;
   position: relative;
-}
+} */
 
 /* Creating an arrow for the calendar */
-input[type="date"]:after {
+/* input[type="date"]:after {
   content: "\25BC";
   padding: 0 5px;
-}
+} */
 
 /* Changes arrow color when hovering */
-input[type="date"]:hover:after {
+/* input[type="date"]:hover:after {
   color: var(--accent-color);
-}
+} */
 
 /* Making the calendar appear when date input box is clicked */
-input[type="date"]::-webkit-calendar-picker-indicator {
+/* input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
   top: 0;
   left: 0;
@@ -79,20 +79,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: auto;
   color: transparent;
   background: transparent;
-}
+} */
 
 /* Adjusting increase/decrease button */
-input[type="date"]::-webkit-inner-spin-button {
+/* input[type="date"]::-webkit-inner-spin-button {
   z-index: 1;
-}
+} */
 
 /* Adjusting clear button */
-input[type="date"]::-webkit-clear-button {
+/* input[type="date"]::-webkit-clear-button {
   z-index: 1;
-}
+} */
 
 /* Select form option */
-select {
+/* select {
   width: 100%;
   float: right;
   margin-top: 5px;
@@ -107,10 +107,10 @@ select {
 label {
   padding: 5px;
   display: inline-block;
-}
+} */
 
 /* Submit button */
-input[type=submit] {
+/* input[type=submit] {
   background-color: var(--accent-color);
   color: white;
   padding: 10px 20px;
@@ -123,11 +123,11 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #c62e1d;
-}
+} */
 
 
 /* GLOBAL */
-a {
+/* a {
   text-decoration: none;
 }
 
@@ -140,16 +140,17 @@ a:hover {
   text-decoration: underline;
   color: var(--accent-color);
 }
+*/
 
 .container--nav {
   display: flex;
   justify-content: space-between;
 }
 
-.container {
+/* .container {
   margin: auto;
   max-width: 900px;
-}
+} */
 
 /* NAV */
 .nav__a--site {
