@@ -1,3 +1,20 @@
 :root {
   --accent-color: #E34F00;
+  --darker: #1d1d1d;
+}
+
+.hero {
+  background-image: url('hero.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 95vh;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.bg-darker {
+  background-color: var(--darker);
 }
