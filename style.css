@@ -18,3 +18,16 @@
 .bg-darker {
   background-color: var(--darker);
 }
+
+/* Button on index page */
+.btn-index {
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+  border-color: #c62e1d;
+}
+
+/* Button on index page */
+.btn-index:hover {
+  background-color: #c62e1d;
+  border-color: #c62e1d;
+}
