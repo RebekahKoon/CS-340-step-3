@@ -20,10 +20,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="library.html">Library</a>
+          <a class="nav-link active" href="library.html">Library</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="events.html">Events</a>
@@ -53,23 +53,23 @@
   <div class="container">
       <h1>Library</h1>
       <div>
-        <table class="table table--books">
-          <thead class="thead">
+        <table class="table table-striped">
+          <thead class="thead thead--books">
             <tr class="tr tr--books">
-              <th class="th th--books">add to checkout</th>
-              <th class="th th--books">bookID</th>
-              <th class="th th--books">title</th>
-              <th class="th th--books">author</th>
-              <th class="th th--books">publisher</th>
-              <th class="th th--books">genre</th>
-              <th class="th th--books">orderNumber</th>
+              <th class="th th--books" scope="col">add to checkout</th>
+              <th class="th th--books" scope="col">bookID</th>
+              <th class="th th--books" scope="col">title</th>
+              <th class="th th--books" scope="col">author</th>
+              <th class="th th--books" scope="col">publisher</th>
+              <th class="th th--books" scope="col">genre</th>
+              <th class="th th--books" scope="col">orderNumber</th>
             </tr>
           </thead>
           <tbody class="tbody tbody--books">
             <!-- data goes here this is placeholder, this will be replaced -->
             <tr class="tr tr--books">
               <td class="td td--books"><input type="checkbox"></td>
-              <td class="td td--books">1</td>
+              <th class="td td--books" scope="row">1</td>
               <td class="td td--books">the hobbit</td>
               <td class="td td--books">jrr tolkien</td>
               <td class="td td--books">penguin</td>
@@ -77,8 +77,8 @@
               <td class="td td--books">NULL</td>
             </tr>
             <tr class="tr tr--books">
-              <td class="td td--books"><input type="checkbox"></td>
-              <td class="td td--books">2</td>
+              <td class="td td--books" scope="row"><input type="checkbox"></td>
+              <th class="td td--books">2</td>
               <td class="td td--books">harry pooter</td>
               <td class="td td--books">jk rowling</td>
               <td class="td td--books">paramount</td>
@@ -89,7 +89,7 @@
               <td class="td td--books">
                 <input type="checkbox">
               </td>
-              <td class="td td--books">3</td>
+              <th class="td td--books" scope="row">3</td>
               <td class="td td--books">hunger games</td>
               <td class="td td--books">suzanne collins</td>
               <td class="td td--books">scholastic</td>
@@ -100,7 +100,7 @@
               <td class="td td--books">
                 <input type="checkbox">
               </td>
-              <td class="td td--books">4</td>
+              <th class="td td--books" scope="row">4</td>
               <td class="td td--books">pride and prejudice</td>
               <td class="td td--books">jane austen</td>
               <td class="td td--books">a publisher</td>
@@ -111,7 +111,7 @@
               <td class="td td--books">
                 <input type="checkbox">
               </td>
-              <td class="td td--books">5</td>
+              <th class="td td--books" scope="row">5</td>
               <td class="td td--books">chronicles of narnia</td>
               <td class="td td--books">cs lewis</td>
               <td class="td td--books">hello world</td>
@@ -126,17 +126,19 @@
         <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
           <fieldset>
             <legend>Checkout Book</legend>
-            <p>
-              <label>Library ID:
-                <input type="number" name="id-input">
-              </label>
-            </p>
-            <input type="submit" value="Checkout">
+            <div class="form-group">
+              <label>Library ID</label>
+              <input type="number" class="form-control" name="id-input">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Checkout">
           </fieldset>
         </form>
       </div>
     </div>
-    
   </div>
+  <!-- bootstrap js dependencies -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
