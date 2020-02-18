@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css" type="text/css">
-  <title>Hawkins Public Library - Register for Events</title>
+  <title>Hawkins Public Library - Add Events</title>
 </head>
 
 <body>
@@ -27,7 +26,7 @@
           <a class="nav-link" href="library.html">Library</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="events.html">Events</a>
+          <a class="nav-link" href="events.html">Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="return.html">Return Books</a>
@@ -36,16 +35,16 @@
           <a class="nav-link" href="join.html">Join</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Admin<span class="sr-only">(current)</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="manage-books.html">Manage books</a>
-            <a class="dropdown-item" href="add-book.html">Add a book</a>
+            <a class="dropdown-item dropdown-item active" href="add-book.html">Add a book</a>
             <a class="dropdown-item" href="add-events.html">Add an event</a>
             <a class="dropdown-item" href="delete-events.html">Delete events</a>
             <a class="dropdown-item" href="checkout-orders.html">View checkout orders</a>
-            <a class="dropdown-item" href="view-event-registration.html">View event registrations</a>
+            <a class="dropdown-item" href="view-event-registration.html">View events</a>
             <a class="dropdown-item" href="customers.html">View customers</a>
           </div>
         </li>
@@ -55,69 +54,37 @@
   <!-- NAV ENDS HERE -->
 
   <div class="container">
-    <h1>Upcoming Events</h1>
+    <h1>Add a Book</h1>
 
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username" aria-describedby="button-addon2">
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
-      </div>
-    
-    <table class="table table-striped">
-      <thead class="thead thead--events">
-        <tr class="tr tr--events">
-          <th class="th th--events" scope="col">Event ID</th>
-          <th class="th th--events" scope="col">Name</th>
-          <th class="th th--events" scope="col">Date</th>
-          <th class="th th--events" scope="col">Guest</th>
-        </tr>
-      </thead>
-      <tbody class="tbody tbody--events">
-        <tr class="tr tr--events">
-          <th class="th th--events" scope="row">123</th>
-          <td class="td td--events">Author Meet and Greet</td>
-          <td class="td td--events">2/19/20</td>
-          <td class="td td--events">JK tolkien meyers</td>
-        </tr>
-        <tr class="tr tr--events">
-          <th class="th th--events" scope="row">234</th>
-          <td class="td td--events">Children's Storytime</td>
-          <td class="td td--events">2/26/20</td>
-          <td class="td td--events">Librarian</td>
-        </tr>
-        <tr class="tr tr--events">
-          <th class="th th--events" scope="row">543</th>
-          <td class="td td--events">Book club</td>
-          <td class="td td--events">3/6/20</td>
-          <td class="td td--events">Gandalf</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!-- Form for user to register for an event -->
     <div>
       <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+
         <fieldset>
+          
           <div class="form-group">
-            <label>Library ID:</label>
-            <input type="text" class="form-control" name="library-id">
+            <label>Book name:</label>
+            <input type="text" class="form-control" name="name">
           </div>
             
           <div class="form-group">
-            <label>Choose event:</label>
-            <select class="dropdown">
-              <option value="fixme" name="bath">Author Meet and Greet</option>
-              <option value="fixme" name="style">Children's Storytime</option>
-              <option value="fixme" name="style">Book club</option>
-            </select>
+            <label>Author:</label>
+            <input type="text" class="form-control" name="author">
+          </div>
+          <div class="form-group">
+            <label>Publisher:</label>
+            <input type="text" class="form-control" name="publishert">
+          </div>
+          <div class="form-group">
+            <label>Genre:</label>
+            <input type="text" class="form-control" name="genre">
           </div>
           
-          <input type="submit" class="btn btn-primary" value="Submit">
+          <input type="submit" class="btn btn-primary" value="Add book">
         </fieldset>
       </form>
     </div>
-
   </div>
+
   <!-- bootstrap js dependencies -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

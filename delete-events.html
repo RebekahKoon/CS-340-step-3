@@ -43,7 +43,7 @@
             <a class="dropdown-item" href="manage-books.html">Manage books</a>
             <a class="dropdown-item" href="add-book.html">Add a book</a>
             <a class="dropdown-item" href="add-events.html">Add an event</a>
-            <a class="dropdown-item" href="delete-events.html">Delete events</a>
+            <a class="dropdown-item dropdown-item active" href="delete-events.html">Delete events</a>
             <a class="dropdown-item" href="checkout-orders.html">View checkout orders</a>
             <a class="dropdown-item" href="view-event-registration.html">View event registrations</a>
             <a class="dropdown-item" href="customers.html">View customers</a>
@@ -55,13 +55,9 @@
   <!-- NAV ENDS HERE -->
 
   <div class="container">
-    <h1>Upcoming Events</h1>
+    <h1>Delete Events</h1>
 
     <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username" aria-describedby="button-addon2">
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
-      </div>
     
     <table class="table table-striped">
       <thead class="thead thead--events">
@@ -70,6 +66,7 @@
           <th class="th th--events" scope="col">Name</th>
           <th class="th th--events" scope="col">Date</th>
           <th class="th th--events" scope="col">Guest</th>
+          <th class="th th--events" scope="col">Delete</th>
         </tr>
       </thead>
       <tbody class="tbody tbody--events">
@@ -78,44 +75,30 @@
           <td class="td td--events">Author Meet and Greet</td>
           <td class="td td--events">2/19/20</td>
           <td class="td td--events">JK tolkien meyers</td>
+          <td class="td td--events">
+            <button>delete</button>
+          </td>
         </tr>
         <tr class="tr tr--events">
           <th class="th th--events" scope="row">234</th>
           <td class="td td--events">Children's Storytime</td>
           <td class="td td--events">2/26/20</td>
           <td class="td td--events">Librarian</td>
+          <td class="td td--events">
+            <button>delete</button>
+          </td>
         </tr>
         <tr class="tr tr--events">
           <th class="th th--events" scope="row">543</th>
           <td class="td td--events">Book club</td>
           <td class="td td--events">3/6/20</td>
           <td class="td td--events">Gandalf</td>
+          <td class="td td--events">
+            <button>delete</button>
+          </td>
         </tr>
       </tbody>
     </table>
-
-    <!-- Form for user to register for an event -->
-    <div>
-      <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
-        <fieldset>
-          <div class="form-group">
-            <label>Library ID:</label>
-            <input type="text" class="form-control" name="library-id">
-          </div>
-            
-          <div class="form-group">
-            <label>Choose event:</label>
-            <select class="dropdown">
-              <option value="fixme" name="bath">Author Meet and Greet</option>
-              <option value="fixme" name="style">Children's Storytime</option>
-              <option value="fixme" name="style">Book club</option>
-            </select>
-          </div>
-          
-          <input type="submit" class="btn btn-primary" value="Submit">
-        </fieldset>
-      </form>
-    </div>
 
   </div>
   <!-- bootstrap js dependencies -->

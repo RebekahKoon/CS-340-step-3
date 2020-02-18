@@ -40,9 +40,12 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item dropdown-item active" href="manage-books.html">Manage books</a>
-            <a class="dropdown-item" href="add-events.html">Manage events</a>
+            <a class="dropdown-item" href="add-book.html">Add a book</a>
+            <a class="dropdown-item" href="add-events.html">Add an event</a>
+            <a class="dropdown-item" href="delete-events.html">Delete events</a>
             <a class="dropdown-item" href="checkout-orders.html">View checkout orders</a>
-            <a class="dropdown-item" href="view-event-registration.html">View events</a>
+            <a class="dropdown-item" href="view-event-registration.html">View event registrations</a>
+            <a class="dropdown-item" href="customers.html">View customers</a>
           </div>
         </li>
       </ul>
@@ -56,13 +59,14 @@
         <table class="table table-striped">
           <thead class="thead thead--books">
             <tr class="tr tr--books">
-              <th class="th th--books" scope="col">bookID</th>
-              <th class="th th--books" scope="col">title</th>
-              <th class="th th--books" scope="col">author</th>
-              <th class="th th--books" scope="col">publisher</th>
-              <th class="th th--books" scope="col">genre</th>
-              <th class="th th--books" scope="col">orderNumber</th>
-              <th class="th th--books" scope="col">update/delete</th>
+              <th class="th th--books" scope="col">Book ID</th>
+              <th class="th th--books" scope="col">Title</th>
+              <th class="th th--books" scope="col">Author</th>
+              <th class="th th--books" scope="col">Publisher</th>
+              <th class="th th--books" scope="col">Genre</th>
+              <th class="th th--books" scope="col">Order Number</th>
+              <th class="th th--books" scope="col">Update</th>
+              <th class="th th--books" scope="col">Delete</th>
             </tr>
           </thead>
           <tbody class="tbody tbody--books">
@@ -75,10 +79,11 @@
               <td class="td td--books">fantasy</td>
               <td class="td td--books">NULL</td>
               <td class="td td--books">
-                <button>update</button>
-                <button>delete</button>
+                <button>Update</button>
               </td>
-              
+              <td class="td td--books">
+                <button>Delete</button>
+              </td>
             </tr>
             <tr class="tr tr--books">
               <th class="td td--books" scope="row">2</td>
@@ -88,8 +93,10 @@
               <td class="td td--books">fantasy</td>
               <td class="td td--books">NULL</td>
               <td class="td td--books">
-                <button>update</button>
-                <button>delete</button>
+                <button>Update</button>
+              </td>
+              <td class="td td--books">
+                <button>Delete</button>
               </td>
             </tr>
             <tr class="tr tr--books">
@@ -100,8 +107,10 @@
               <td class="td td--books">novel</td>
               <td class="td td--books">23</td>
               <td class="td td--books">
-                <button>update</button>
-                <button>delete</button>
+                <button>Update</button>
+              </td>
+              <td class="td td--books">
+                <button>Delete</button>
               </td>
             </tr>
             <tr class="tr tr--books">
@@ -112,8 +121,10 @@
               <td class="td td--books">historical?</td>
               <td class="td td--books">3</td>
               <td class="td td--books">
-                <button>update</button>
-                <button>delete</button>
+                <button>Update</button>
+              </td>
+              <td class="td td--books">
+                <button>Delete</button>
               </td>
             </tr>
             <tr class="tr tr--books">
@@ -124,44 +135,15 @@
               <td class="td td--books">fantasy</td>
               <td class="td td--books">NULL</td>
               <td class="td td--books">
-                <button>update</button>
-                <button>delete</button>
+                <button>Update</button>
+              </td>
+              <td class="td td--books">
+                <button>Delete</button>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-
-      <div>
-        <form class="form--add-book" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
-          <fieldset>
-            <legend>Add Book</legend>
-            <div class="form-group">
-              <label>Title</label>
-              <input type="text" class="form-control" name="title">
-            </div>
-            
-            <div class="form-group">
-              <label>Author</label>
-              <input type="text" class="form-control" name="title">
-            </div>
-
-            <div class="form-group">
-              <label>Publisher</label>
-              <input type="text" class="form-control" name="title">
-            </div>
-
-            <div class="form-group">
-              <label>Genre</label>
-              <input type="text" class="form-control" name="title">
-            </div>
-
-            <input type="submit" class="btn btn-primary" value="Add Book">
-          </fieldset>
-        </form>
-      </div>
-    </div>
-  </div>
 
   <!-- bootstrap js dependencies -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
